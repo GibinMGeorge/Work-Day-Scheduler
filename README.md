@@ -10,11 +10,11 @@ When we click the save button for that time block, then the text for that event 
 When the page is refreshed, the saved events persist
 
 
-JavaScript and CSS file is properly commented.
+JavaScript file is properly commented.
 
 
 
-* The URL of the deployed application - https://gibinmgeorge.github.io/Password_Generator/
+* The URL of the deployed application - https://gibinmgeorge.github.io/Work-Day-Scheduler/
 
 * The URL of the GitHub repository - https://github.com/GibinMGeorge/Work-Day-Scheduler
 
