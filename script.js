@@ -30,4 +30,27 @@ $(function () {
     });
   }
 
-  
+  // Call the function to update time block styles initially.
+  updateBlockStyles();
+
+  // Set up interval to update time block styles every minute.
+  setInterval(updateBlockStyles, 60000);
+
+  // TODO: Add code to get any user input that was saved in localStorage.
+  function loadSavedInput() {
+    $(".time-block").each(function () {
+      var blockId = $(this).attr("id");
+      var savedText = localStorage.getItem(blockId);
+
+      if (savedText !== null) {
+        $(this).find(".description").val(savedText);
+      }
+    });
+  }
+
+  // Call the function to load saved input initially.
+  loadSavedInput();
+
+  // TODO: Add code to display the current date in the header of the page.
+  $("#currentDay").text(dayjs().format("dddd, MMMM D"));
+});
